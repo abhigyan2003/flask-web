@@ -15,18 +15,28 @@
       height:360px;
       width:100%;
       object-fit:cover;
+      margin-bottom: 16px;
     }
+    
+    
   </style>
 </head>
 <body>
+  {% include 'nav.html' %}
+   <img class="img-fluid" id="banner" src="https://c6f4939a-681b-418f-b576-a261de8c1c17-00-3bwnayxbwgyyk.sisko.replit.dev/static/banner.jpg" >
   <div class="container" >
     <h1 class="text-center mt-2 mb-4" >Career Point</h1>
-    <img class="img-fluid" id="banner" src="https://c6f4939a-681b-418f-b576-a261de8c1c17-00-3bwnayxbwgyyk.sisko.replit.dev/static/banner.jpg" >
+ 
 
-    <h2 class="text-center">About Career Point</h2>
+ <div class="row">
+   <div class="col-6">
     <p class="lead">Lorem ipsum odor amet, consectetuer adipiscing elit. Lorem neque varius tempor urna velit id sapien. Phasellus bibendum bibendum, tristique in nec est fames. Eget vulputate senectus quam; cubilia inceptos potenti mauris montes. Ac ligula aliquam maecenas montes eleifend? Facilisis curae mattis facilisis fusce feugiat.
   
     Montes neque curae placerat non lacinia natoque a. Penatibus volutpat eget; suspendisse at elit senectus parturient faucibus. Habitant himenaeos velit diam mus pulvinar magna auctor.</p>
+   </div>
+   <div class="col-md-6">
+   <img src="/static/people.jpg" style="height:320px; border-radius:4px;">
+ </div>
 
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <p >
@@ -37,8 +47,9 @@
 
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="mt-4">Copyright 2022, Career Point</p>
+     
     </div>
   </div>
+  {% include 'footer.html' %}
 </body>
 </html>
